@@ -4,14 +4,6 @@ local wezterm = require("wezterm")
 -- this will hold the configuration.
 local config = wezterm.config_builder()
 
--- -- NOTE: Below is a configuration for external plugins
--- -- Feel free to change accorrdingly
--- local modal = require("plugins.modal-wezterm.plugin.init")
--- modal.apply_to_config(config)
-
--- local bar = require("plugins.bar-wezterm.plugin.init")
--- bar.apply_to_config(config)
-
 -- NOTE: CONFIG STARTS HERE
 -- this is where you actually apply your config choices
 -- note that this configuration is opinionated and does reflect user's personality
@@ -65,6 +57,17 @@ config.window_background_opacity = 0.85
 
 -- NOTE: From here below is a configuration for Shortcuts, etc.
 -- Feel free to change accordingly
+
+-- NOTE: Below is a configuration for external plugins
+-- Feel free to change accorrdingly
+
+-- local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+-- bar.apply_to_config(config)
+
+-- local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
+-- -- tabline.get_config()
+-- tabline.setup()
+-- tabline.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config
