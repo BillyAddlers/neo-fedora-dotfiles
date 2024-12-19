@@ -38,13 +38,19 @@ table.insert(config.hyperlink_rules, {
 config.color_scheme = "catppuccin-mocha"
 
 -- set the font and font size
-config.font = wezterm.font_with_fallback({ "MononokiNerdFont", "CascadiaCodeNF" })
-config.font_size = 14
+config.font = wezterm.font_with_fallback({ "JetBrainsMonoNL", "CascadiaCodeNF" })
+config.font_size = 12
 
 config.allow_square_glyphs_to_overflow_width = "WhenFollowedBySpace"
 
 -- enable ligatures
 config.harfbuzz_features = { "ss01", "calt=1", "clig=1", "liga=1" }
+
+-- set max fps
+config.max_fps = 120
+
+-- enable kitty graphics
+config.enable_kitty_graphics = true
 
 -- configuring tab bar and scroll bar
 config.enable_tab_bar = false
