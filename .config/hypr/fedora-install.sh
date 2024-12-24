@@ -86,3 +86,5 @@ pip3 install https://github.com/T-Dynamos/materialyoucolor-python/archive/master
 sudo dnf4 config-manager --add-repo https://download.opensuse.org/repositories/home:sp1rit:notekit/Fedora_Rawhide/home:sp1rit:notekit.repo
 sudo dnf install clatexmath-devel
 sudo dnf install aylurs-gtk-shell 
+
+
